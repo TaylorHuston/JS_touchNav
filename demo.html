@@ -1,29 +1,50 @@
 <html>
   <head>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="touchNav.js"></script>
 
   </head>
 
   <body>
+    <style>
+      a {
+        text-decoration: none;
+        color: black;
+        display: block;
+        width: 200px;
+        height: 30px;
+        border: 1px solid black;
+      }
+      #menu li {
+        position: relative;
+        list-style-type: none;
+      }
+      .subNav {
+        position: absolute;
+        top: 0;
+        left: 200px;
+      }
 
+
+    </style>
+
+    <nav>
+      <ul id="menu">
+        <li><a href="#">Menu 1</a></li>
+        <li><a href="#">Menu 2</a></li>
+        <li><a href="#">Menu 3</a>
+          <ul class="subNav">
+            <li><a href="#">Sub 1</a></li>
+            <li><a href="#">Sub 2</a></li>
+            <li><a href="#">Sub 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Menu 4</a></li>
+        <li><a href="#">Menu 5</a></li>
+      </ul>
+    </nav>
 
   </body>
-
-  <nav>
-    <ul id="menu">
-      <li><a href="#">Menu 1</a></li>
-      <li><a href="#">Menu 2</a></li>
-      <li><a href="#">Menu 3</a>
-        <ul class="subNav">
-          <li><a href="#">Sub 1</a></li>
-          <li><a href="#">Sub 2</a></li>
-          <li><a href="#">Sub 3</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Menu 4</a></li>
-      <li><a href="#">Menu 5</a></li>
-    </ul>
-  </nav>
 
 </html>
